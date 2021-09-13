@@ -21,8 +21,7 @@ class ViewControllerTests: XCTestCase {
         
         tap(sut.button)
         
-        XCTAssertEqual(mockURLSession.dataTaskCallCount, 1)
-        XCTAssertEqual(mockURLSession.dataTastArgsRequest.first, URLRequest(url: URL(string: "https://itunes.apple.com/search?media=ebook&term=out%20from%20bonnevile")!))
+        mockURLSession.verifyDataTask(with: URLRequest(url: URL(string: "https://itunes.apple.com/search?" +  "media=ebook&term=out%20from%20bonnevile")!))
 
     }
 }
