@@ -16,7 +16,8 @@ class ViewController: UIViewController {
     
     @IBOutlet private(set) var button: UIButton!
     private var dataTask: URLSessionDataTask?
-    var session: URLSession = URLSession.shared
+    
+    var session: URLSessionProtocol = URLSession.shared
     
     @IBAction private func buttonTapped() {
         searchForBooks(terms: "out from bonnevile")
@@ -49,6 +50,8 @@ class ViewController: UIViewController {
     }
     
 }
+
+
 protocol URLSessionProtocol {
     func dataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask
 }
