@@ -17,6 +17,7 @@
 		E1AF464126EA0318009B4908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1AF463F26EA0318009B4908 /* LaunchScreen.storyboard */; };
 		E1AF464F26EB3F4E009B4908 /* NetworkRequestTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF464E26EB3F4E009B4908 /* NetworkRequestTestsTests.swift */; };
 		E1AF465726EB3F6D009B4908 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF465626EB3F6D009B4908 /* MockURLSession.swift */; };
+		E1CB6E7026F47CE40076EDD1 /* SpyURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB6E6F26F47CE40076EDD1 /* SpyURLSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		E1AF464E26EB3F4E009B4908 /* NetworkRequestTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestTestsTests.swift; sourceTree = "<group>"; };
 		E1AF465026EB3F4E009B4908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1AF465626EB3F6D009B4908 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		E1CB6E6F26F47CE40076EDD1 /* SpyURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyURLSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				E1AF465626EB3F6D009B4908 /* MockURLSession.swift */,
 				E105214E26EF43EA00E094C1 /* ViewControllerTests.swift */,
 				E105215026EF44AC00E094C1 /* TestHelpers.swift */,
+				E1CB6E6F26F47CE40076EDD1 /* SpyURLSession.swift */,
 			);
 			path = NetworkRequestTestsTests;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1CB6E7026F47CE40076EDD1 /* SpyURLSession.swift in Sources */,
 				E105214F26EF43EA00E094C1 /* ViewControllerTests.swift in Sources */,
 				E1AF465726EB3F6D009B4908 /* MockURLSession.swift in Sources */,
 				E1AF464F26EB3F4E009B4908 /* NetworkRequestTestsTests.swift in Sources */,
