@@ -23,9 +23,12 @@ class ViewController: UIViewController {
         searchForBooks(terms: "out from boneville")
     }
     
-    private(set) var result: [SearchResult] = [] {
+    var handleResults: ([SearchResult]) -> Void = { print($0) }
+
+    
+    private(set) var results: [SearchResult] = [] {
         didSet {
-            print(result)
+            handleResults(results)
         }
     }
     
@@ -59,7 +62,7 @@ class ViewController: UIViewController {
                 guard let self = self else { return }
                 
                 if let decoded = decoded {
-                    self.result = decoded.results
+                    self.results = decoded.results
                 }
                 if let errorMessage = errorMessage {
                     self.showError(errorMessage)
