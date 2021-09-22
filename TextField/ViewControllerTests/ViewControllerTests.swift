@@ -20,4 +20,17 @@ class ViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.userNameField, "userField")
         XCTAssertNotNil(sut.passwordField, "passwordField")
     }
+    
+    func test_usernameFieldAttributesShouldBeSet() {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        
+        let sut: ViewController = sb.instantiateViewController(identifier: String(describing: ViewController.self))
+        
+        sut.loadViewIfNeeded()
+        
+        let textField = sut.userNameField!
+        XCTAssertEqual(textField.textContentType, .username, "textContentType")
+        XCTAssertEqual(textField.autocorrectionType, .no, "autocorrectionType")
+        XCTAssertEqual(textField.returnKeyType, .next, "returnKeyType   ")
+    }
 }
